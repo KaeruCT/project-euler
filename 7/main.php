@@ -15,10 +15,10 @@
     }
 
     function nth_prime($n) {
-        $pc = 1;
-        $i = 2;
+        $pc = 2;
+        $i = 3;
 
-        for (;;$i++) {
+        for (;;$i+=2) {
             if (is_prime($i)) {
                 if ($pc == $n) {
                     return $i;

@@ -6,7 +6,7 @@ def is_palindrome(n)
 
   while tmp != 0
     r *= 10
-    r = r + tmp % 10
+    r += tmp % 10
     tmp /= 10
   end
 
